@@ -1,5 +1,6 @@
 body{
-    margin: 0;
+    margin:0;
+    padding: auto;
 }
 /*Landing*/
 .container-landing{
@@ -10,26 +11,34 @@ body{
     width:100%;
     height:800px;
 }
+.contenido-landing{
+    background-color:var(--background-color);
+}
 .contenido-landing h1{
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 50px;
     font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
 }
 .btn-landing {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    top: 250px;
 }
 .btn-landing button{
     width: 200px;
     height: 50px;
     cursor: pointer;
+    background-color: var(--background-color);
 }
 .btn-landing a{
     text-decoration: none;
-    color: black;
+    background-color: var(--background-color);
+    color: var(--text-color);
     font-size: 20px;
 }
 /*Landing*/
@@ -38,6 +47,7 @@ nav{
     display: flex;
     justify-content: space-between;
     border-bottom:1px solid black;
+    background-color: var(--background-color);
 }
 nav .title-nav{
     font-size: 30px;
@@ -45,9 +55,10 @@ nav .title-nav{
 }
 nav .title-nav a{
     text-decoration: none;
+    color:var(--text-color);
 }
 nav .title-nav a h1{
-    color: black;
+    color:var(--text-color);
     font-family: 'Poppins', sans-serif;
 }
 .nav-btn{
@@ -67,10 +78,14 @@ nav .title-nav a h1{
     font-size: 20px;
     cursor: pointer;
     text-decoration: none;
-    color: black;
+    color: var(--text-color);
 }
 /*NavBar*/
 /*Main*/
+main{
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
 .img-home img{
     width: 100%;
     height: 550px;
@@ -91,13 +106,15 @@ nav .title-nav a h1{
 .dog-main img{
     width: 100%;
     height: 550px;
-}
+}   
 
 .detail h1{
     display: flex;
     font-size: 30px;
     font-family: 'Poppins', sans-serif;
     justify-content:center;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 .detail .cuidados{
     display: flex;
@@ -106,7 +123,7 @@ nav .title-nav a h1{
 }
 .detail .info{
     width: 300px;
-    border: 1px solid black;
+    border: 1px solid var(--text-color);
 }
 .detail .info h4{
     display: flex;
@@ -145,7 +162,7 @@ nav .title-nav a h1{
     font-size: 20px;
     width: 200px;
     background-color: brown;
-    color: white;
+    color: var(--background-color);
     border-radius: 25px;
     cursor: pointer;
 }
@@ -179,8 +196,8 @@ nav .title-nav a h1{
     height: 50px;
     border-radius: 25px;
     font-size:20px;
-    border: wheat;
-    color: white;
+    border: var(--text-color);
+    color: var(--background-color)    ;
     background-color:#A92F2F;
 }
 .casos ul {
@@ -200,14 +217,33 @@ nav .title-nav a h1{
 }
 /* Main Other */
 /* Main Contact */
+.container-input{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    gap:50px;   
+}
 .container-input input{
     width: 200px;
-    height: 50px;
+    height: 100px;
+    font-size: 20px;
+}
+#input-text{
+    text-align: center;
 }
 .container-input textarea{
     width: 300px;
     height: 100px;
     max-width: 400px;
     max-height: 100px;
+}
+.container-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#btn{
+    width: 200px;
+    height: 80px;
 }
 /* Main Contact */
